@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fridgeWatcher</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>Home</header>
+    <main class="home-grid">
+      <a class="app-link" href="/freezer" aria-label="프리저 열기">
+        <span class="app-icon">
+          <svg viewBox="0 0 64 64" role="img" aria-label="냉장고">
+            <rect x="17" y="8" width="30" height="48" rx="5" fill="none" stroke="currentColor" stroke-width="3"/>
+            <path d="M17 27h30" fill="none" stroke="currentColor" stroke-width="3"/>
+            <path d="M23 15v7M23 34v10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"/>
+            <path d="M22 56v2M42 56v2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"/>
+          </svg>
+        </span>
+        <span class="app-label">프리저</span>
+      </a>
+      <a class="app-link" href="/freezer/state" aria-label="상태 파일 열기">
+        <span class="app-icon note-icon">
+          <svg viewBox="0 0 64 64" role="img" aria-label="노트">
+            <path d="M18 8h21l9 9v39H18z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="3"/>
+            <path d="M39 8v10h9M24 29h18M24 37h18M24 45h12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </svg>
+        </span>
+        <span class="app-label">상태 파일</span>
+      </a>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </main>
+  </body>
+</html>

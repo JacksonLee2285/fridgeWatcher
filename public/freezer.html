@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프리저 | fridgeWatcher</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="freezer-page">
+    <div class="freezer-shell">
+      <header class="freezer-header">
+        <a class="back-link" href="/" aria-label="Home으로 돌아가기">←</a>
+        <h1>프리저</h1>
+      </header>
+
+      <main class="conversation" id="conversation" aria-live="polite">
+        <div class="empty-state" id="empty-state">
+          <strong>냉동고 문지기</strong>
+          <span>냉동고에 대해 물어보세요</span>
+        </div>
+      </main>
+
+      <form class="composer" id="chat-form">
+        <label class="visually-hidden" for="message-input">메시지</label>
+        <input
+          id="message-input"
+          name="message"
+          type="text"
+          placeholder="메시지를 입력하세요"
+          autocomplete="off"
+        >
+        <button type="submit" id="send-button">전송</button>
+      </form>
+    </div>
+    <script src="freezer.js"></script>
+  </body>
+</html>
